@@ -1,4 +1,4 @@
-window.promises = [];
+
 
 // Do not change the code above this
 // add your promises to the array `promises`
@@ -30,6 +30,7 @@ const e = new Promise( (resolve) => {
 })
 
 const x = Promise.any([a,b,c,d,e]);
+window.promises = [a,b,c,d,e];
 x.then( (data) => {
 	let div = document.getElementById("output");
 	div.innerHTML = data;
